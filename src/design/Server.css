@@ -1,0 +1,60 @@
+/* تعريفات عامة */
+.server {
+    display: flex;
+    align-items: center;
+    background-color: #2c2f33; /* لون الخلفية الداكنة */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل ثلاثي الأبعاد */
+  }
+  
+  /* شعار الخادم */
+  .server-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  /* معلومات الخادم */
+  .server-info {
+    flex: 1;
+  }
+  
+  .server-info h2 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+  }
+  
+  /* رمز التحقق */
+  .verified-badge {
+    color: #5865f2; /* لون رمز التحقق */
+    font-size: 18px;
+    margin-left: 4px;
+  }
+  
+  /* أعداد الأعضاء */
+  .online-members {
+    color: #2ecc71; /* لون الأعضاء الذين online */
+  }
+  
+  .total-members {
+    color: #ccc; /* لون عدد الأعضاء الإجمالي */
+  }
+  
+  /* زر الانضمام */
+  .join-button {
+    background-color: #2ecc71; /* لون الزر الأخضر */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-button:hover {
+    background-color: #27ae60; /* لون الزر عند التفاعل */
+  }

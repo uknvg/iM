@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* تأكد من أن الجسم يغطي كامل الصفحة */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; /* وضع العناصر في عمود */
+  justify-content: flex-start; /* التأكد من محاذاة الهيدر في الأعلى */
+  align-items: start; /* محاذاة العناصر أفقيًا في المنتصف */
+  height: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+.hero {
+  width: 960px;
+  height: 700px;
+  border-radius: 12px;
+  margin-top: 100px; /* لضمان وجود مساحة بين الهيدر و الـ hero */
+  backdrop-filter: blur(40px); /* تأثير الزجاج (blur) */
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 { 
+  position: absolute; 
+  left: 19.6%;
+  top: -4%;
+  color: #ffffff; /* لون النص */
+  font-size: 40px; /* تكبير الخط قليلاً */
+  text-align: center;
+  z-index: 2;
+  margin-top: 50px;
+  text-shadow: 
+               0 0 20px rgba(255, 255, 255, 0.391), 
+               0 0px 4px rgba(255, 255, 255, 0.645); /* تأثير التوهج */
+}
+
+.hero p {
+  color: #ffffff80;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px; 
+  margin-left: -16%;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6; /* تحسين التباعد بين الأسطر لجعل النص أكثر وضوحًا */
+  letter-spacing: 0.5px; /* إضافة تباعد بين الحروف لجعل النص أكثر وضوحًا */
+  transition: transform 0.3s ease, color 0.3s ease; /* تأثيرات عند التفاعل مع النص */
+}
+ 
+.hero p span { 
+  margin-left: -8%;
+} 
+ 
+.hero button { 
+  margin-left: 17%; 
+  border: none;
+  background-color: #53575c3c; 
+  width:100px; 
+  height: 35px; 
+  border-radius: 20px; 
+  color: #70767d;
+  font-weight: 620;
+}
+.security {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  left: 150%;
+  top: -10%; 
+  transform: translateY(-50%);
+  border-radius: 15px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(105, 202, 170, 0.2);
+  position: relative;
+
+} 
+
+.security::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffcc70, #b17c4a, #b65cff, #50e3c2, #a05886);
+  background-size: 300% 300%;
+  animation: gradientShift 7s infinite linear; 
+  filter: blur(5px);
+}
+
+.security h1 {  
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.065); 
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  text-shadow: 0 4px 10px rgba(112, 108, 108, 0.357);
+  left: 50px;
+  position: absolute; 
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);  
+  top: -20px;
+  transition: all 0.3s ease-in; 
+} 
+
+.security h1:hover { 
+  color: rgba(255, 255, 255, 0.63); 
+}
+
+
+
+.sheild:hover { 
+  color: rgba(255, 255, 255, 0.452); 
+  transform: scale(1.01);
+}
+
+.sheild {
+  font-size: 225px;
+  position: relative;
+  margin-left: 60%;
+  margin-top: -20%;
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3);  
+  transition: all 0.3s ease-in;
+}
+ 
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,268 @@
+.overview {
+    width: 203vh; 
+    height: 100vh;  
+    display: flex;
+    justify-content: center; 
+}
+
+.overview .help-section { 
+    width: 65%;
+    height: 10%;
+    position: absolute;
+    left: 20%; 
+    top: 10%
+} 
+
+.bx-support { 
+    font-size: 65px;
+    color: #2e6394;
+    padding: 7px;
+    background-color: #212229;
+    margin-left: 30px; 
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.bxs-coin-stack { 
+    font-size: 65px;
+    color: #e0d61ccf;
+    padding: 7px;
+    background-color: #ffd9041d;
+    margin-left: 30px; 
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.help-section .gethelp { 
+    background-color:#0f0f15;
+    position: absolute; 
+    width: 50%; 
+    height: 120px;
+    border-radius: 8px;
+} 
+
+.gethelp h1 { 
+    position: absolute; 
+    top: 30px; 
+    color: white;
+    left: 20%; 
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.gethelp p { 
+    position: absolute; 
+    top: 65px; 
+    color: rgb(186, 191, 190);
+    left: 20%; 
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.help-section .getcoins { 
+    background-color: #0f0f15;
+    position: absolute; 
+    width: 50%;  
+    margin-left: 53%;
+    height: 120px;
+    border-radius: 8px;
+} 
+
+.getcoins h1 { 
+    position: absolute; 
+    top: 30px; 
+    color: white;
+    left: 20%; 
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.getcoins p { 
+    position: absolute; 
+    top: 65px; 
+    color: rgb(186, 191, 190);
+    left: 20%; 
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.mod { 
+    width: 67.2%;
+    height: 60%;
+    background-color: #1f222c; 
+    margin-top: 250px;  
+    border-radius: 10px;
+    margin-left: 7.2%;
+} 
+
+.mod .coins { 
+    width: 23%;
+    height: 22%;
+    background-color: #0f0f15; 
+    margin-left: 80px;
+    margin-top: 30px; 
+    border-radius: 8px; 
+} 
+
+.coins h1 { 
+    color: #d7d9e1;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 20px; 
+    margin-top: 10px;
+    font-size: 30px; 
+} 
+
+.coins p { 
+    width: fit-content;
+    height: fit-content;
+    background-color: #283454;
+    color: #3057d7;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px; 
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+} 
+
+.coins p::after { 
+    content: "C";
+}
+
+.mod .type { 
+    width: 23%;
+    height: 22%;
+    background-color: #0f0f15; 
+    margin-left: 33%;
+    margin-top: -9.65%; 
+    border-radius: 8px; 
+} 
+
+.type h1 { 
+    color: #d7d9e1;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 20px; 
+    margin-top: 10px;
+    font-size: 30px; 
+} 
+
+.type p { 
+    width: fit-content;
+    height: fit-content;
+    background-color: #322145;
+    color: #761ee9;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px; 
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+} 
+
+.bxs-user { 
+    font-size: 70px; 
+    margin-left: 67%; 
+    margin-top: 27px;
+    background-color: #251833;
+    color: #6f29cc;
+    border-radius: 10px;
+}
+
+.bx-bitcoin { 
+    font-size: 70px; 
+    margin-left: 67%; 
+    margin-top: 27px;
+    background-color: #202942;
+    color: #3553b6;
+    border-radius: 10px;
+}
+
+.bx-wallet { 
+    font-size: 70px; 
+    margin-left: 67%; 
+    margin-top: 27px;
+    background-color: #232c20;
+    color: #73af2a;
+    border-radius: 10px;
+}
+
+.mod div { 
+    transition: all 0.3s ease;
+} 
+
+.mod div:hover { 
+    transform: scale(1.08); 
+}
+
+.mod .wallet { 
+    width: 23%;
+    height: 22%;
+    background-color: #0f0f15; 
+    margin-left: 60%;
+    margin-top: -9.65%; 
+    border-radius: 8px; 
+} 
+
+.wallet h1 { 
+    color: #d7e1da;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 20px; 
+    margin-top: 10px;
+    font-size: 30px; 
+} 
+
+.wallet p { 
+    width: fit-content;
+    height: fit-content;
+    background-color: #232c20;
+    color: #83d81c;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px; 
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+} 
+/* Payment Table Styles */
+.payment-table-container {
+    width: 90%; /* عرض الجدول */
+    margin: 20px auto; /* تمركز الجدول أفقيًا */
+    padding: 20px; /* مساحة داخلية حول الجدول */
+    border-radius: 8px; /* زوايا مستديرة */
+}
+
+.payment-table-container h1 {
+    color: #d7d9e1; /* لون العنوان */
+    font-size: 24px; /* حجم الخط */
+    text-align: center; /* توسيط النص */
+    margin-bottom: 20px; /* مسافة بين العنوان والجدول */
+}
+
+.payment-table {
+    width: 100%; /* عرض الجدول */
+    border-collapse: collapse; /* إزالة الحدود الزائدة */
+    margin-top: 10px; /* مسافة من الأعلى */
+}
+
+.payment-table th,
+.payment-table td {
+    border: 1px solid #3a4342; /* حدود الخلايا */
+    padding: 10px; /* مساحة داخلية للخلايا */
+    text-align: center; /* توسيط النصوص */
+    color: #d7d9e1; /* لون النصوص */
+    font-size: 16px; /* حجم الخط */
+}
+
+.payment-table th {
+    font-weight: bold; /* خط عريض */
+}
+
+
+.payment-table tr:hover {
+    background-color: #2e354a; /* تغيير الخلفية عند التحويم */
+    cursor: pointer; /* مؤشر يد عند التحويم */
+}

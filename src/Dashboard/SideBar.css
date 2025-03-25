@@ -1,0 +1,153 @@
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 250px;
+  background-color: #0f0f15;
+  color: white;
+  height: 100vh; 
+  border-radius: 0 30px 30px 0;
+  top: 0;
+  left: 0; 
+  position: fixed; /* هذا هو التعديل الأساسي */
+  overflow: hidden;
+}
+
+/**
+      #293848,
+      #8871ae 
+*/
+.user-info {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.user-info {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.user-info h5 {
+  position: absolute;
+  top: 32px;
+  left: 100px;
+}
+
+.user-info p {
+  position: absolute;
+  top: 55px;
+  left: 100px;
+  font-size: 13px;
+  color: rgba(176, 176, 179, 0.859);
+}
+
+.avatar {
+  border-radius: 20%;
+  border: 2px solid rgba(220, 220, 221, 0.218);
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.user-details {
+  margin-top: 10px;
+}
+
+.user-details h3,
+.user-details p {
+  margin: 0;
+}
+
+.user-info:hover {
+  background-color: rgba(116, 120, 121, 0.097);
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.menu-item { 
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+
+
+.menu-item i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #c6c5c4;
+  transition: color 0.3s;
+}
+
+.menu-item span {
+  color: white;
+}
+
+.menu-item:hover i {
+  color: #969694; /* تغيير اللون عند التحويم */
+}
+
+/* تعديل الـ section-title */
+.section-title {
+  margin-top: 20px;
+  color: rgb(139, 139, 141);
+  font-size: 14px;
+  font-weight: normal; /* إزالة التأثيرات التفاعلية */
+  transition: none; /* إزالة تأثيرات الانتقال */
+}
+
+.section-title:hover {
+  background-color: transparent; /* التأكد من عدم تغيير الخلفية عند التفاعل */
+  color: rgb(139, 139, 141); /* إبقاء اللون كما هو عند التفاعل */
+}
+
+
+
+.menu-item {
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #64676922;
+}
+
+.menu-item.active {
+  background-color: #55575915;
+}
+
+.menu-item.active i {
+  color: #969694; /* تغيير اللون للأيقونة عند التفعيل */
+}
+
+.menu-item:hover i {
+  color: #969694; /* تغيير اللون عند مرور الماوس */
+}
